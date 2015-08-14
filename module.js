@@ -17,6 +17,21 @@
 (this, function($) {
   'use strict';
 
+  // Module helper functions below
+  var helperFunction = function() {
+    // i cannot be accessed outside
+  }
+
+
+
+
+
+
+  // Module Apis below
+  Module.prototype.doSomething = function() {
+
+  }
+
   // Constructor function
   var Module = function(options) {
     this.options = $.extend({}, this.DEFAULTS, options);
