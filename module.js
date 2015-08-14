@@ -23,21 +23,17 @@
   }
 
 
-
-
-
-
-  // Module Apis below
-  Module.prototype.doSomething = function() {
-
-  }
-
   // Constructor function
   var Module = function(options) {
     this.options = $.extend({}, this.DEFAULTS, options);
 
     // your code
   };
+
+  // Module Apis below
+  Module.prototype.doSomething = function() {
+
+  }
 
   // Defaults
   Module.prototype.DEFAULTS = {
