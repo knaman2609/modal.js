@@ -9,25 +9,25 @@ var jsdom;
 
 // for running from terminal
 if (typeof exports === 'object') {
-  sinon = require("sinon");
-  sinonChai = require("sinon-chai");
+  sinon = require('sinon');
+  sinonChai = require('sinon-chai');
   chai = require('chai');
   expect = chai.expect;
   chai.use(sinonChai);
 
   jsdom = require('jsdom').jsdom;
-  global.window = jsdom().parentWindow;
-  global.jQuery = global.$ = require('jquery')(window);
+  document = jsdom('<html><body></body></html>', {});
+  window = document.defaultView;
 
-  Module = require('../module.js');
+  Dropdown = require('../dropdown.js');
 
-  $ = require('jquery')();
+  $ = require('jquery');
 } else {
   expect = chai.expect;
-  Module = window.Module;
+  Dropdown = window.Module;
   $ = window.jQuery;
 }
 
 describe('Module', function() {
-  // Module tests here
+
 });
