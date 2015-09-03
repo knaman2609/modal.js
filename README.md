@@ -2,6 +2,8 @@
 
 #### Install
     npm install modaljs    
+    
+    var Modal = require('modaljs');
 
 if not using browerify/webpack simply copy modal.js and modal.css.
 
