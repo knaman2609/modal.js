@@ -1,4 +1,6 @@
 # Modal
+![modal](modal.png)       
+
 
 #### Install
     npm install modaljs    
