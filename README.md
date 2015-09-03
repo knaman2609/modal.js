@@ -16,7 +16,8 @@ See the example in example folder.
 ##### create the modal box
 ```javascript
 var modal = Modal(); // returns the same modal obj every time.
-                     // use this to create new  modal if close
+
+ // use this to create new  modal if close
 modal.create({       
     _class: 'modal--doSomething',
     header: 'My custom header',
@@ -77,9 +78,11 @@ Use  `this.$el`  to access the modal element inside any of these callbacks.
 ##### update the modal box
 ```javascript
 
-var modal = Modal(); // returns the same modal obj
+var modal = Modal();
 
-modal.update({  //  use this if updating the modal keeping the new prev values.
+//  use this if updating the modal keeping the 
+//  prev values of header, footer.
+modal.update({  
   _class: 'modal--success',
   body: 'delete Success',
   footer: {confirmText: null, cancelText: null},
