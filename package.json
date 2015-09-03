@@ -7,7 +7,7 @@
     "popup"
   ],
   "main": "modal.js",
-  "repository": "knaman2609/modal",
+  "repository": "knaman2609/modal.js",
   "dependencies": {
     "jquery": "latest"
   },
