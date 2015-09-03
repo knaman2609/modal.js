@@ -40,6 +40,7 @@ Pass `null` for footer options if dont want confirm or cancel.
     </div>
 </div>
 ```
+This html will be generated only once for the first time automatically.
 
 
 ##### Css   
