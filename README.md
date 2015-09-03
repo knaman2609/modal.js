@@ -27,6 +27,7 @@ Use `_class` to add custom modal css for different situations.
 
 Pass `null` for footer options if dont want confirm or cancel.
 
+
 #####html generated
 ```html
 <div class="modal is-active">
@@ -40,10 +41,13 @@ Pass `null` for footer options if dont want confirm or cancel.
 </div>
 ```
 
+
 ##### Css   
 Copy the css from modal.css.
+`is-active`  class is appled on open.
 
-### Callbacks
+
+##### Callbacks
 ```javascript
 var modal = Modal();
 modal.create({
@@ -76,7 +80,5 @@ modal.update({
 ```
 
 #####close the modal
-    modal.close(2000);
-
-closes after 2000 ms.
-
+    modal.close(); // close immediately
+    modal.close(2000); // to close after 2000ms
