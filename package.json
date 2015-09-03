@@ -1,11 +1,13 @@
 {
   "name": "module-name",
   "version": "0.0.0",
-  "description": "module-description",
+  "description": "modaljs"
   "keywords": [
+    "modal",
+    "popup"
   ],
-  "main": "module.js",
-  "repository": "knaman2609/Module",
+  "main": "modaljs.js",
+  "repository": "knaman2609/modal",
   "dependencies": {
     "jquery": "latest"
   },
