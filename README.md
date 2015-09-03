@@ -1,15 +1,15 @@
 # Modal
 
-####Install
+#### Install
     npm install modaljs    
 
 if not using browerify/webpack simply copy modal.js and modal.css.
+
 See the example in example folder.
 
 ### Usage  
 
-#####create the modal box
-
+##### create the modal box
 ```javascript
 var modal = Modal();
 modal.create({
@@ -23,12 +23,12 @@ modal.open();
 
 ```
 
-Use `_class` to add custom modal css for different situations. 
+Use  `_class` to add custom modal css for different situations. 
 
-Pass `null` for footer options if dont want confirm or cancel.
+Pass  `null` for footer options if dont want confirm or cancel.
 
 
-#####html generated
+##### html generated
 ```html
 <div class="modal is-active">
     <div class="modal__backdrop"></div>
@@ -44,8 +44,7 @@ This html will be generated only once for the first time automatically.
 
 
 ##### Css   
-Copy the css from modal.css.
-`is-active`  class is appled on open.
+Copy the css from modal.css. `is-active`  class is appled on open.
 
 
 ##### Callbacks
@@ -61,16 +60,16 @@ modal.create({
 });
 ```
 
-`done` is called after `modal.create()`.
+`done` is called after  `modal.create()`.
 
 `confirm` is called on confirm button click.
 
 `cancel` is called  on close button click.
 
-Use `this.$el`  to access the modal element inside any of these callbacks.
+Use  `this.$el`  to access the modal element inside any of these callbacks.
 
 
-#####update the modal box
+##### update the modal box
 ```javascript
 modal.update({
   _class: 'modal--success',
@@ -82,4 +81,5 @@ modal.update({
 
 #####close the modal
     modal.close(); // close immediately
+
     modal.close(2000); // to close after 2000ms
