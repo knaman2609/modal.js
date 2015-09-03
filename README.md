@@ -79,7 +79,7 @@ modal.update({
 });
 ```
 
-#####close the modal
+##### close the modal
     modal.close(); // close immediately
 
     modal.close(2000); // to close after 2000ms
