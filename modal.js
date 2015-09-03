@@ -28,7 +28,7 @@
   /**
    * attach click events
    */
-  var addListners = function () {
+  var addListners = function() {
     var $cancel = this.$el.find('.modal__footer .cancel');
     var $close = this.$el.find('.modal__close');
     var $confirm = this.$el.find('.modal__footer .confirm');
@@ -109,7 +109,7 @@
           closeNow.call(_this);
         }, ms);
       } else {
-          closeNow.call(_this);
+        closeNow.call(_this);
       }
 
       return this;
@@ -158,9 +158,11 @@
     header: 'Modal Header',
     body: 'Modal Body',
     footer: {confirmText: null, cancelText: null},
-    done: function(){},
-    confirm: function(){},
-    cancel: function(){}
+    done: function() {},
+
+    confirm: function() {},
+
+    cancel: function() {},
   };
 
   return Modal;
