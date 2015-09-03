@@ -1,12 +1,12 @@
 {
-  "name": "module-name",
+  "name": "modaljs",
   "version": "0.0.0",
-  "description": "modaljs"
+  "description": "A simple modal generator/",
   "keywords": [
     "modal",
     "popup"
   ],
-  "main": "modaljs.js",
+  "main": "modal.js",
   "repository": "knaman2609/modal",
   "dependencies": {
     "jquery": "latest"
